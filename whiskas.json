@@ -1,0 +1,27 @@
+{
+    "name": "Whiskas",
+    "variables":["chicken", "beef", "mutton", "rice", "wheat", "gel"],
+    "objCoeffs": [0.013, 0.008, 0.010, 0.002, 0.005, 0.001],
+    "objective": "MIN",
+    "LHS": {
+        "percentage": [1, 1, 1, 1, 1, 1],
+        "protein": [0.100, 0.200, 0.150, 0.000, 0.040, 0.000],
+        "fat": [0.080, 0.100, 0.110, 0.010, 0.010, 0.000],
+        "fiber": [0.001, 0.005, 0.003, 0.100, 0.150, 0.000],
+        "salt": [0.002, 0.005, 0.007, 0.002, 0.008, 0.000]
+        },
+    "conditions": {
+        "percentage": "==",
+        "protein": ">=",
+        "fat": ">=",
+        "fiber": "<=",
+        "salt": "<="
+        },
+    "RHS": {
+        "percentage": 100,
+        "protein": 8.0,
+        "fat": 6.0,
+        "fiber": 2.0,
+        "salt": 0.4
+        }
+}

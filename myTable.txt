@@ -1,0 +1,2 @@
+The optimal value for Intro LP is 410.000
+The optimal value for Whiskas is 0.520
